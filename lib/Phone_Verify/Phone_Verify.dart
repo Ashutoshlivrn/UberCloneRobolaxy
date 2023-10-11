@@ -107,7 +107,9 @@ class _PhoneVerifyState extends State<PhoneVerify> {
           Spacer(),
           InkWell(
             onTap: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => Home()  ,));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => Home(
+
+              )  ,));
             },
             child: Container(
                 margin: EdgeInsets.symmetric(horizontal: size10),

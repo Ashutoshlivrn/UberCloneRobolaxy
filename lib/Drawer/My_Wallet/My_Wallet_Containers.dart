@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper_view/flutter_swiper_view.dart';
 import 'package:uberclone/Drawer/My_Wallet/My_Wallet.dart';
+import 'package:uberclone/Drawer/My_Wallet/Payment_Methods/Payment_Methods.dart';
 
 import '../../constants/colors.dart';
 
@@ -98,7 +99,7 @@ Widget walletContainer2(BuildContext context){
   Widget tileContainer( String title, String trailingText){
     return Container(
       color: Colors.white,
-      height: 43,
+      height: size10 * 4.2,
       width: double.infinity,
       child: Row(
         children: [
@@ -132,7 +133,9 @@ Widget walletContainer2(BuildContext context){
       children: [
         SizedBox(height:  size10 * 15,),
         InkWell(
-          onTap: () {},
+          onTap: () {
+            Navigator.of(context).push(MaterialPageRoute(builder: (context) => PaymentMethods(),));
+          },
           child: tileContainer('Payment Methods', ''),
         ),
         SizedBox(height: size10 * 3,),

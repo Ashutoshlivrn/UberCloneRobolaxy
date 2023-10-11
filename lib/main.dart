@@ -25,14 +25,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home:
 
-      SplashScreen()
+     // SplashScreen()
       //Onboarding()
       //SetUpGps()
        //SignInUp()
      // PhoneVerify()
      // Home()
-      //MyWalletClass()
-
+      MyWalletClass()
+ // MyHomePage()
 
 
 
